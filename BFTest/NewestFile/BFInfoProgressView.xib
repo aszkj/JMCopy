@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNj-V6-XOr" userLabel="progressView" customClass="BFInfoProgressView">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <subviews>
+                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHO-z0-lot">
+                    <rect key="frame" x="0.0" y="40" width="60" height="20"/>
+                    <color key="backgroundColor" red="0.97085492230000003" green="0.84504072809999997" blue="0.37154104459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8z4-SZ-082">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.97085492230000003" green="0.84504072809999997" blue="0.37154104459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLc-A9-Jr3">
+                    <rect key="frame" x="8" y="16" width="43" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完整度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0j-a7-LXA">
+                    <rect key="frame" x="19.5" y="48.5" width="21.5" height="8.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YHO-z0-lot" secondAttribute="trailing" id="0fY-WQ-Fja"/>
+                <constraint firstItem="YHO-z0-lot" firstAttribute="leading" secondItem="zNj-V6-XOr" secondAttribute="leading" id="2h5-Nl-e0R"/>
+                <constraint firstAttribute="bottom" secondItem="YHO-z0-lot" secondAttribute="bottom" id="bAs-fQ-gR5"/>
+                <constraint firstItem="SLc-A9-Jr3" firstAttribute="centerY" secondItem="zNj-V6-XOr" secondAttribute="centerY" id="c0D-cj-iGY"/>
+                <constraint firstItem="SLc-A9-Jr3" firstAttribute="centerX" secondItem="zNj-V6-XOr" secondAttribute="centerX" id="cca-92-ptd"/>
+                <constraint firstItem="YHO-z0-lot" firstAttribute="top" secondItem="zNj-V6-XOr" secondAttribute="top" constant="40" id="n1q-0T-JTI"/>
+                <constraint firstItem="F0j-a7-LXA" firstAttribute="centerX" secondItem="zNj-V6-XOr" secondAttribute="centerX" id="qhI-Zt-atl"/>
+                <constraint firstItem="YHO-z0-lot" firstAttribute="width" secondItem="zNj-V6-XOr" secondAttribute="width" id="sbW-ze-uqM"/>
+                <constraint firstAttribute="bottom" secondItem="F0j-a7-LXA" secondAttribute="bottom" constant="3" id="yyH-6Q-DwA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="30"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="heightConstraint" destination="n1q-0T-JTI" id="9dr-kR-Wsq"/>
+                <outlet property="percentLabel" destination="SLc-A9-Jr3" id="y8k-MB-vAd"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="-479"/>
+        </view>
+    </objects>
+</document>

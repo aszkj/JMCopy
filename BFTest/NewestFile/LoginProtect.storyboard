@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Protect View Controller-->
+        <scene sceneID="cYR-Y7-sFa">
+            <objects>
+                <viewController storyboardIdentifier="LoginProtectViewController" id="Abv-6L-Hge" customClass="LoginProtectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pkm-T4-yvP"/>
+                        <viewControllerLayoutGuide type="bottom" id="W2T-Y7-vbY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="92p-Pk-7GH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="后台发送的校验码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5y-m5-Dhh">
+                                <rect key="frame" x="116" y="120" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="校验码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcP-p9-q3i">
+                                <rect key="frame" x="116" y="168" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t3n-sJ-xps">
+                                <rect key="frame" x="116" y="206" width="143" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONA-An-Sv6">
+                                <rect key="frame" x="116" y="262" width="143" height="30"/>
+                                <state key="normal" title="进行校验"/>
+                                <connections>
+                                    <action selector="protectCodeBtn:" destination="Abv-6L-Hge" eventType="touchUpInside" id="gvY-OZ-cum"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="t5y-m5-Dhh" secondAttribute="trailing" constant="100" id="5uy-CT-QkK"/>
+                            <constraint firstItem="t5y-m5-Dhh" firstAttribute="leading" secondItem="92p-Pk-7GH" secondAttribute="leadingMargin" constant="100" id="6Pv-x5-abR"/>
+                            <constraint firstItem="ONA-An-Sv6" firstAttribute="top" secondItem="t3n-sJ-xps" secondAttribute="bottom" constant="26" id="PK5-NJ-AKR"/>
+                            <constraint firstItem="t3n-sJ-xps" firstAttribute="leading" secondItem="TcP-p9-q3i" secondAttribute="leading" id="WP2-uE-GmE"/>
+                            <constraint firstItem="TcP-p9-q3i" firstAttribute="top" secondItem="t5y-m5-Dhh" secondAttribute="bottom" constant="27" id="ZQ5-Xv-cEB"/>
+                            <constraint firstItem="TcP-p9-q3i" firstAttribute="trailing" secondItem="t5y-m5-Dhh" secondAttribute="trailing" id="ZhK-Y2-Qw1"/>
+                            <constraint firstItem="t5y-m5-Dhh" firstAttribute="top" secondItem="pkm-T4-yvP" secondAttribute="bottom" constant="100" id="d6M-Pr-1O3"/>
+                            <constraint firstItem="TcP-p9-q3i" firstAttribute="leading" secondItem="t5y-m5-Dhh" secondAttribute="leading" id="gVq-G3-Mgj"/>
+                            <constraint firstItem="ONA-An-Sv6" firstAttribute="trailing" secondItem="t3n-sJ-xps" secondAttribute="trailing" id="jtl-87-DMu"/>
+                            <constraint firstItem="t3n-sJ-xps" firstAttribute="trailing" secondItem="TcP-p9-q3i" secondAttribute="trailing" id="pRp-3V-hIa"/>
+                            <constraint firstItem="ONA-An-Sv6" firstAttribute="leading" secondItem="t3n-sJ-xps" secondAttribute="leading" id="tMg-gv-2YM"/>
+                            <constraint firstItem="t3n-sJ-xps" firstAttribute="top" secondItem="TcP-p9-q3i" secondAttribute="bottom" constant="17" id="v2e-s1-b0G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="protectCodeLabel" destination="TcP-p9-q3i" id="kkp-QF-az3"/>
+                        <outlet property="protectCodeTF" destination="t3n-sJ-xps" id="jqP-H9-g2b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0T5-qr-RL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-353" y="23"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,28 @@
+//
+//  pchFile.pch
+//  BFTest
+//
+//  Created by 伯符 on 16/5/4.
+//  Copyright © 2016年 bofuco. All rights reserved.
+//
+
+#ifndef pchFile_pch
+#define pchFile_pch
+
+
+#ifdef __OBJC__
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "GlobalDefines.h"
+#import "UIView+ROAdd.h"
+#import "SSKeychain.h"
+#import "SSKeychainQuery.h"
+#import "BFOriginNetWorkingTool+login.h"
+#import "AppDelegate.h"
+
+#endif
+
+
+#endif /* pchFile_pch */

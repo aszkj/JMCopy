@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BFUserBottomBarView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxf-Cr-tYO">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="999" constant="300" id="6t4-qt-Tei"/>
+                    </constraints>
+                    <state key="normal" title=" 聊聊" image="conversasion_logo">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DT-ib-jaY">
+                    <rect key="frame" x="300" y="0.0" width="187.5" height="80"/>
+                    <state key="normal" title=" 关注" image="focus_logo">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mz2-RB-vSw">
+                    <rect key="frame" x="300" y="12" width="1" height="56"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="J9V-UX-xIj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7DT-ib-jaY" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="5dW-c1-C32"/>
+                <constraint firstItem="Mz2-RB-vSw" firstAttribute="trailing" secondItem="sxf-Cr-tYO" secondAttribute="trailing" constant="1" id="8Cp-g6-dW3"/>
+                <constraint firstItem="7DT-ib-jaY" firstAttribute="leading" secondItem="Mz2-RB-vSw" secondAttribute="leading" id="KSZ-Be-324"/>
+                <constraint firstItem="Mz2-RB-vSw" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.7" id="Lv7-8I-25t"/>
+                <constraint firstItem="7DT-ib-jaY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MgE-OZ-nC1"/>
+                <constraint firstItem="sxf-Cr-tYO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OT7-i3-eXB"/>
+                <constraint firstItem="Mz2-RB-vSw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WSt-0G-5Eb"/>
+                <constraint firstItem="7DT-ib-jaY" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="fHq-tW-02X"/>
+                <constraint firstItem="sxf-Cr-tYO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iuD-ae-DYp"/>
+                <constraint firstItem="sxf-Cr-tYO" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="npp-bN-gxY"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chatButtonAction" destination="sxf-Cr-tYO" id="QK6-vl-gcg"/>
+                <outlet property="chatButtonWidth" destination="6t4-qt-Tei" id="e2z-nC-I15"/>
+                <outlet property="followButtonAction" destination="7DT-ib-jaY" id="3YK-xD-Gns"/>
+            </connections>
+            <point key="canvasLocation" x="2.5" y="-103"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="conversasion_logo" width="37" height="35"/>
+        <image name="focus_logo" width="37" height="39"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BaiduMapKit (3.2)
+  - HappyDNS (0.3.10)
+  - HyphenateFullSDK (3.1.5)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Masonry (1.0.2)
+  - Qiniu (7.1.4):
+    - AFNetworking (~> 3)
+    - HappyDNS (~> 0.3)
+  - RMStore (0.7.1):
+    - RMStore/Core (= 0.7.1)
+  - RMStore/Core (0.7.1)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SSKeychain (1.4.1)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - BaiduMapKit
+  - HyphenateFullSDK
+  - MagicalRecord
+  - Masonry
+  - Qiniu (~> 7.0)
+  - RMStore (~> 0.7)
+  - SDWebImage
+  - SSKeychain
+  - YYImage
+  - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BaiduMapKit: c23aee47be89b2b939a92acfd06627114e897662
+  HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
+  HyphenateFullSDK: e9dbed16c7b51bdb871e0159d29bb320b34ca246
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
+  RMStore: 64ba13a9c040e3b7572765d169f77175cd3243e5
+  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
+  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 7d21411eb6db6011b68ea5132d16a332e576fba1
+
+COCOAPODS: 1.2.0
